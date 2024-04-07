@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: black;
+  color: white;
+}
+
+nav {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 60px;
+  /* background-color: black; */
+  /* color: white; */
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0px 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.brand img {
+  width: 44px;
+  padding: 0px 8px;
+}
+
+.container {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  margin: 0 auto;
+  width: 85%;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background: url("./assets/bg.webp") no-repeat fixed center;
+  background-size: 100%;
+}
+
+.songList{
+  width: 45%;
+}
+
+.songItem{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid chartreuse;
+  margin: 20px 0;
+  border-radius: 10px;
+  color: black;
+}
+
+.songItem img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 0 23px;
+}
+
+.timeStamp{
+  margin: 0px 12px;
+}
+.timeStamp i{
+  cursor: pointer;
+}
+
+.bottom {
+  position: static;
+  height: 70px;
+  /* background-color: black; */
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: white; */
+  flex-direction: column;
+}
+
+
+#myProgressBar {
+  width: 80vw;
+  margin: 15px 0px;
+}
+
+#myProgressBar:hover {
+  cursor: pointer;
+}
+
+.icons i {
+  cursor: pointer;
+  margin: 0px 5px;
+}
+
+.songInfo{
+  position: absolute;
+  height: 20px;
+  left: 10vw;
+  bottom: 50px;
+  /* padding: 30px 5px; */
+  /* border: 2px solid red; */
+  line-height: 10px;
+}
+
+.songInfo img{
+  
+  /* border: 2px solid blue; */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin: -11px 0px;
+}
